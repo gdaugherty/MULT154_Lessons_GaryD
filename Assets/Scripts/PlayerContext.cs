@@ -111,7 +111,7 @@ public class RiverState : PlayerState
 
 public class ForestState : PlayerState
 {
-    public float speed = 80.0f;
+    public float speed = 20.0f;
     public float rotationSpeed = 30.0f;
     Rigidbody rgBody = null;
     float trans = 0;
