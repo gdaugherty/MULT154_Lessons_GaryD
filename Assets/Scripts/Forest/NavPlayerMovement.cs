@@ -40,27 +40,29 @@ public class NavPlayerMovement : MonoBehaviour
         trans += translation;
         rotate += rotation;
 
-        Vector3 rot = transform.rotation.eulerAngles;
+        /*Vector3 rot = transform.rotation.eulerAngles;
         rot.y += rotate * rotationSpeed * Time.deltaTime;
         rgBody.MoveRotation(Quaternion.Euler(rot));
         rotate = 0;
 
         Vector3 move = transform.forward * trans;
         rgBody.velocity = move * speed * Time.deltaTime;
-        trans = 0;
+        trans = 0;*/
     }
 
-    /*private void FixedUpdate()
+    private void FixedUpdate()
     {
         Vector3 rot = transform.rotation.eulerAngles;
         rot.y += rotate * rotationSpeed * Time.deltaTime;
         rgBody.MoveRotation(Quaternion.Euler(rot));
         rotate = 0;
 
-        Vector3 move = transform.forward * trans;
-        rgBody.velocity = move * speed * Time.deltaTime;
+        Vector3 move = transform.forward * trans * speed;
+        move.y = rgBody.velocity.y;
+        rgBody.velocity = move; // * Time.deltaTime;
+
         trans = 0;
-    }*/
+    }
 
     private void OnCollisionEnter(Collision collision)
     {

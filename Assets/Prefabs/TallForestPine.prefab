@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 490812354961675448}
   - component: {fileID: 1340343645792220782}
   - component: {fileID: 4324957982697981939}
+  - component: {fileID: -997066055791781716}
   m_Layer: 0
   m_Name: TallForestPine
   m_TagString: Untagged
@@ -91,3 +92,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &-997066055791781716
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6022264399760742355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0632346, y: 11.864164, z: 1.0723307}
+  m_Center: {x: -0.040023327, y: 5.932082, z: 0.06912756}
